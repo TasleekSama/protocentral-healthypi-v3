@@ -196,7 +196,7 @@ public void setup()
   plotECG = new GPlot(this);
   plotECG.setPos(0,50);
   plotECG.setDim(width, (totalPlotsHeight/3)-10);
-  plotECG.setBgColor(0);
+  plotECG.setBgColor(255);
   plotECG.setBoxBgColor(0);
   plotECG.setLineColor(color(0, 255, 0));
   plotECG.setLineWidth(3);
@@ -205,7 +205,7 @@ public void setup()
   plotPPG = new GPlot(this);
   plotPPG.setPos(0,(totalPlotsHeight/3+60));
   plotPPG.setDim(width, (totalPlotsHeight/3)-10);
-  plotPPG.setBgColor(0);
+  plotPPG.setBgColor(255);
   plotPPG.setBoxBgColor(0);
   plotPPG.setLineColor(color(255, 255, 0));
   plotPPG.setLineWidth(3);
@@ -214,7 +214,7 @@ public void setup()
   plotResp = new GPlot(this);
   plotResp.setPos(0,(totalPlotsHeight/3+totalPlotsHeight/3+70));
   plotResp.setDim(width, (totalPlotsHeight/3)-10);
-  plotResp.setBgColor(0);
+  plotResp.setBgColor(255);
   plotResp.setBoxBgColor(0);
   plotResp.setLineColor(color(0,0,255));
   plotResp.setLineWidth(3);
@@ -464,11 +464,6 @@ public void makeGUI()
       .setPosition(150,height-25)
       .setColorValue(color(255,255,255))
       .setFont(createFont("Verdana",20));
-    
-     cp5.addButton("logo")
-     .setPosition(10,10)
-     .setImages(loadImage("protocentral.png"), loadImage("protocentral.png"), loadImage("protocentral.png"))
-     .updateSize();
           
     if(height<=480) //condition for Raspberry Pi 7" display
     {  
